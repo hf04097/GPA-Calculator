@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="icon.png">
+    <title>GPA Calculator</title>
+</head>
+
+<body>
+
+    <div id="introductionContainer">
+        <h1>GPA Calculation</h1>
+        <p>A grade point average (GPA) is a calculated average of the letter grades you will earn at Habib University following
+            a 0 to 4.0 scale. It represents a student’s average performance in their studies over a stated period of time.
+            Every semester, you will receive a GPA based on the grades you earned in all of your courses during that semester.
+            Semester GPA is represented by SGAP. Throughout your University life, you will also maintain a cumulative GPA,
+            which is an ongoing average of all your semesters beginning from semester 2. Cumulative GPA is often denoted
+            by CGPA.</p>
+    </div>
+    <a href="#guideLineContainer" class="guideHeading"><h1><i class="fa fa-chevron-down"></i> Guidelines To Calculate GPA</h1></a>
+    <div id="calculatorContainer">
+        <h1>GPA Calculator</h1>
+        <div id="contentContainer">
+            <div id="semesterContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Grade</th>
+                            <th>Credit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr class="rows">
+                            <td>
+                                <input type="text" class="courses">
+                            </td>
+                            <td>
+                                <select name="grade" class="grades">
+                                    <option value="A+">A+</option>
+                                    <option value="A">A</option>
+                                    <option value="A-">A-</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B">B</option>
+                                    <option value="B-">B-</option>
+                                    <option value="C+">C+</option>
+                                    <option value="C">C</option>
+                                    <option value="C-">C-</option>
+                                    <option value="F">F</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="credit" class="credits">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="buttonContainer">
+                <input type="button" id="addCourseBtn" class="button" value="Add Course" >
+                <input type="button" id="removeCourseBtn" class="button" value="Remove Course" >
+                <input type="button" id="calculateBtn" class="button" value="Calculate GPA" >
+            </div>
+            <div id="gpaContainer"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <div id="guideLineContainer">
+        <h1>How To Calculate Your GPA?</h1>
+        <p>You can use GPA calculator to calculate your SGPA and CGPA. In order to calculate your <strong>SGPA</strong>, enter the courses of that particular semester. In order to calculate your <strong>CGPA</strong>, enter the courses of all the semesters. Read the following points carefully to calculate your
+            correct GPA:</p>
+        <ol>
+            <li>A mathematical formula for calculating GPA or CGPA is to divide the Total Quality Points by the Total Attempted
+                Credits. Quality points are derived by multiplying credits for the individual course by the numeric value
+                of "letter grade" earned in the course, as listed in the official grading scale of the University</li>
+            <li> Grades A+ to F earned in a course are counted towards the calculation of SGPA and CGPA.</li>
+            <li>Grade F replaced by R or R*, upon repeating a course, will <strong>not</strong> be counted towards the calculation of GPA/SGPA.</li>
+            <li>Following grades will <strong>not</strong> be counted towards the calculation of SGPA or CGPA: <i>Audit (A), Withdraw (W), Incomplete
+                (I), Transfer (T), Suspended (S), Credit (CR), Non-Credit (NCR)</i>.</li>
+            <li> In case of a change of major, earned grades of the following courses will be transferred to the new major and
+                shall be counted towards the calculation of CGPA in the student’s transcript:
+                <ul>
+                    <li>Earned grades of all Habib Liberal Core Courses attended.</li>
+                    <li>Earned grades of all course that fulfill the requirement of the new major.</li>
+                    <li>Courses with pass grades that that may be eligible for transfer to fulfill the graduation requirement(s)
+                        of the new major.</li>
+                </ul>
+            </li>
+            <li> In case of a change of major, all other courses (and their grades) that are not transferred to the new major
+                shall be mentioned on the transcript; however, their respective grades shall not be counted towards the calculation
+                of SGPA and CGPA. </li>
+        </ol>
+    </div>
+
+    
+</body>
+
+</html>

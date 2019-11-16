@@ -1,0 +1,403 @@
+
+
+body{
+    background-color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+p,ol{
+    font-size: 50px;
+}
+
+#introductionContainer h1{
+    border: 1px solid #CD7DC8;
+    border-radius: 10px;
+    background: purple;
+    color: white;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    /*! margin: 20px 550px; */
+    font-size: 35px;
+    margin: 0 auto;
+}
+.guideHeading h1{
+    border:2px solid #CD7DC8;
+    background: purple;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    width: 580px;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+.guideHeading{
+    text-decoration: none;
+}
+
+#guideLineContainer h1{
+    border: 1px solid #CD7DC8;
+    border-radius: 10px;
+    background: purple;
+    color: white;
+    width: 550px;
+    text-align: center;
+    padding: 20px;
+    /*! margin: 20px 450px; */
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+#introductionContainer p,#guideLineContainer p,#guideLineContainer ol{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+#calculatorContainer h1{
+    border: 1px solid #CD7DC8;
+    /*! width: 550px; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0px;
+       background: purple;
+    color: white;
+}
+
+#contentContainer{
+    /*! margin: 5% 25% 25% 25%; */
+    border: 2px solid #CD7DC8;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+#calculatorContainer{    
+    border-radius: 30px;
+    padding: 20px 0px;
+    margin: 25px 0px;
+}
+
+th{
+    color: #4D3D5A;
+    font-size: 20px;
+}
+table {
+    width: 100%;
+}
+table td select,
+table td input{
+    width: 100%;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#buttonContainer{
+    text-align: center;
+}
+
+#calculatorContainer .courses,#calculatorContainer .grades,#calculatorContainer .credits{
+    /*! border: 1px solid #90468D; */
+    /*! border-radius: 5px; */
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
+.courses{
+    /*! width: 120px; */
+}
+
+#calculatorContainer .button{
+    border: 1px solid  #90468D;
+    /*! border-radius: 5px; */
+    margin: 5px;
+    padding: 5px;
+    
+    background-color: #5c2568;
+    color: white;
+}
+#calculatorContainer .button:hover,#calculatorContainer .courses:hover,#calculatorContainer .grades:hover,#calculatorContainer .credits:hover {
+    /*! background-color: #DCB9DD; */
+}
+
+#calculatorContainer .button:hover{
+    cursor: pointer;
+    /*! border-radius: 10px; */
+}
+
+/*Gpa Container*/
+.gpaContainer{
+    border: 1px solid #90468D;
+    border-radius: 5px;
+    margin: 4px auto;
+    width: 40%;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2px;
+}
+
+#contentContainer .button:hover{
+    border-color: blue;
+    border-radius: 5px;
+    background-color: #5c2599;
+}
+
+/* MEDIA SCREENS */
+
+@media only screen and (max-width: 1550px) {
+    #introductionContainer h1 {
+        /*! margin: 20px 500px; */
+    }
+    #guideLineContainer h1,#calculatorContainer #contentContainer {
+        /*! margin: 20px 450px; */
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+
+    }
+    #calculatorContainer h1{
+        width: 35%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #introductionContainer h1 {
+        /*! margin: 20px 450px; */
+    }
+    #guideLineContainer h1 {
+        /*! margin: 20px 400px; */
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+    #introductionContainer h1 {
+        /*! margin: 20px 375px; */
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        /*! margin: 20px 330px; */
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (max-width: 1150px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer #contentContainer,#calculatorContainer h1 {
+        margin: 20px auto;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1,.guideHeading h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+    
+}
+
+@media only screen and (max-width: 750px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+        width: 65%
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+        width: 80%;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1,.guideHeading h1 {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+    .guideHeading h1{
+        width:95%
+    }
+
+}
+@media only screen and (max-width: 610px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+        width: 85%;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+    }
+    #calculatorContainer h1{
+        margin: 20px auto;
+    }
+    .guideHeading h1{
+        font-size:27px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1,.guideHeading h1 {
+        font-size: 24px;
+    }
+    
+
+@media only screen and (max-width: 540px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+    }
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+        
+    }
+}
+
+
+@media only screen and (max-width: 510px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+        width: 70%;
+    }
+    .guideHeading h1{
+        font-size:23px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #guideLineContainer h1,#calculatorContainer #contentContainer ,#calculatorContainer h1{
+        margin: 20px auto;
+        
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1,.guideHeading h1 {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #calculatorContainer .courses,#calculatorContainer .grades,#calculatorContainer .credits{
+        margin: 5px auto;
+    }
+    #calculatorContainer .button{
+        margin: 5px auto;
+    }
+    .guideHeading h1{
+        font-size:19px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #guideLineContainer h1,#calculatorContainer h1,#calculatorContainer #contentContainer {
+        margin: 20px auto;
+        
+    }
+    th{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 365px) {
+    #calculatorContainer .courses,#calculatorContainer .grades,#calculatorContainer .credits{
+        padding: 5px 2px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+    #calculatorContainer .button{
+        padding: 5px 2px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+    th{
+        font-size: 15px;
+    }
+    #introductionContainer h1,#guideLineContainer h1,#calculatorContainer h1,.guideHeading h1 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #introductionContainer h1 {
+        margin: 20px auto;
+        
+    }
+    .guideHeading h1{
+        font-size:16px;
+    }
+    th{
+        font-size: 13px;
+    }
+    p,ol{
+        font-size: 100px;
+    }
+}
